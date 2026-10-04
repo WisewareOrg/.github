@@ -68,10 +68,37 @@ A pull-request title shall be a Conventional Commits subject (`type: subject` or
 subject`, per `@commitlint/config-conventional`), and shall not be a `fixup!`, `squash!` or merge
 subject.
 
-Enforced by: [commitlint](https://commitlint.js.org)
+Enforced by: [pr-title](https://github.com/WisewareOrg/wise-ci/tree/main/pr-title)
 
 ### PROC-010 — Ticket types
 
 The ticket types are `task`, `bug`, `design` and `process`.
 
 Enforced by: [check-branch](https://github.com/WisewareOrg/wise-ci/tree/main/check-branch)
+
+## Repository settings
+
+### PROC-011 — Repository floor
+
+Each repository's settings shall meet at least those stated in
+[`repository-floor.yml`](repository-floor.yml).
+
+Enforced by: [repo-floor](https://github.com/WisewareOrg/wise-ci/tree/main/repo-floor)
+
+### PROC-012 — Default-branch pull requests
+
+Changes shall reach the default branch only by pull request.
+
+Enforced by: [repo-floor](https://github.com/WisewareOrg/wise-ci/tree/main/repo-floor)
+
+### PROC-013 — Default-branch deletion
+
+The default branch shall not be deleted.
+
+Enforced by: [repo-floor](https://github.com/WisewareOrg/wise-ci/tree/main/repo-floor)
+
+### PROC-014 — Default-branch force-push
+
+The default branch shall not be force-pushed.
+
+Enforced by: [repo-floor](https://github.com/WisewareOrg/wise-ci/tree/main/repo-floor)
