@@ -1,6 +1,6 @@
 # Minimum repository settings for every repository in WisewareOrg (PROC-011, PROCESS.md).
 # GitHub REST ruleset shape (repos/{owner}/{repo}/rulesets). Fields not listed here are not part
-# of the floor: a repository may be stricter, never looser.
+# of the floor.
 rulesets:
   - name: process-gates
     target: branch
