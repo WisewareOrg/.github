@@ -72,6 +72,6 @@ Enforced by: [commitlint](https://commitlint.js.org)
 
 ### PROC-010 — Ticket types
 
-A ticket's type shall be one of `task`, `bug`, `design` or `process`.
+The ticket types are `task`, `bug`, `design` and `process`.
 
 Enforced by: [check-branch](https://github.com/WisewareOrg/wise-ci/tree/main/check-branch)
