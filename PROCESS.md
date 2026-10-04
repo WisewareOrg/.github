@@ -52,7 +52,7 @@ Enforced by: [check-branch](https://github.com/WisewareOrg/wise-ci/tree/main/che
 
 A pull request targeting the default branch shall come from an issue with no parent. A pull request
 targeting any other branch shall target a branch named per PROC-001, and its head branch's issue
-shall be a sub-issue, in the same repository, of that branch's issue.
+shall be a sub-issue, in the same repository, of the target branch's issue.
 
 Enforced by: [check-branch](https://github.com/WisewareOrg/wise-ci/tree/main/check-branch)
 
