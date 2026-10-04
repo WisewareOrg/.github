@@ -1,15 +1,14 @@
 # WisewareOrg process
 
 These requirements apply to every repository in WisewareOrg. Each repository's `CONTRIBUTING.md`
-links here and states its own parameters for these requirements — its set of ticket types — alongside
-its own contribution rules. Each requirement names the gate that enforces it.
+links here alongside its own contribution rules. Each requirement names the gate that enforces it.
 
 ## Branches, tickets and pull requests
 
 ### PROC-001 — Branch name
 
 The head branch of a pull request shall be named `<type>_<number>-<name>`: `<type>` one of the
-repository's ticket types; `<number>` its issue's number, a positive integer with no leading zero;
+ticket types (PROC-010); `<number>` its issue's number, a positive integer with no leading zero;
 `<name>` one or more words, each made up of lowercase letters and digits, joined by single
 underscores.
 
@@ -30,8 +29,8 @@ Enforced by: [check-branch](https://github.com/WisewareOrg/wise-ci/tree/main/che
 
 ### PROC-004 — Type label
 
-The branch's issue shall carry exactly one label from the repository's ticket types, the one named
-by the branch's type. Labels outside the ticket types are permitted.
+The branch's issue shall carry exactly one label from the ticket types (PROC-010), the one named by
+the branch's type. Labels outside the ticket types are permitted.
 
 Enforced by: [check-branch](https://github.com/WisewareOrg/wise-ci/tree/main/check-branch)
 
@@ -70,3 +69,9 @@ subject`, per `@commitlint/config-conventional`), and shall not be a `fixup!`, `
 subject.
 
 Enforced by: [commitlint](https://commitlint.js.org)
+
+### PROC-010 — Ticket types
+
+The ticket types are `task`, `bug`, `design` and `process`.
+
+Enforced by: [check-branch](https://github.com/WisewareOrg/wise-ci/tree/main/check-branch)
