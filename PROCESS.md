@@ -57,8 +57,9 @@ Enforced by: [check-branch](https://github.com/WisewareOrg/wise-ci/tree/main/che
 
 ### PROC-008 — Integration-branch parent
 
-A pull request targeting any other branch shall target a branch named per PROC-001, and its head
-branch's issue shall be a sub-issue, in the same repository, of the target branch's issue.
+A pull request targeting a branch other than the default branch shall target a branch named per
+PROC-001, and its head branch's issue shall be a sub-issue, in the same repository, of the target
+branch's issue.
 
 Enforced by: [check-branch](https://github.com/WisewareOrg/wise-ci/tree/main/check-branch)
 
