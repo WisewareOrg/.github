@@ -15,7 +15,7 @@ rulesets:
       - type: required_status_checks
         parameters:
           required_status_checks:
-            # check-branch: PROC-001–PROC-008
+            # check-branch: PROC-001, PROC-002, PROC-003, PROC-004, PROC-005, PROC-006, PROC-007, PROC-008, PROC-010
             - context: check-branch
               integration_id: 15368
             # pr-title: PROC-009
