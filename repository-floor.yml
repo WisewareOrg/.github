@@ -1,0 +1,48 @@
+# Minimum repository settings for every repository in WisewareOrg (PROC-011, PROCESS.md).
+# GitHub REST ruleset shape (repos/{owner}/{repo}/rulesets). Fields not listed here are not part
+# of the floor: a repository may be stricter, never looser.
+rulesets:
+  - name: process-gates
+    target: branch
+    enforcement: active
+    conditions:
+      ref_name:
+        include:
+          - "~DEFAULT_BRANCH"
+        exclude: []
+    bypass_actors: []
+    rules:
+      - type: required_status_checks
+        parameters:
+          required_status_checks:
+            # check-branch: PROC-001–PROC-008
+            - context: check-branch
+              integration_id: 15368
+            # pr-title: PROC-009
+            - context: pr-title
+              integration_id: 15368
+            # repo-floor: PROC-011
+            - context: repo-floor
+              integration_id: 15368
+
+  - name: pull-request
+    target: branch
+    enforcement: active
+    conditions:
+      ref_name:
+        include:
+          - "~DEFAULT_BRANCH"
+        exclude: []
+    bypass_actors:
+      - actor_type: OrganizationAdmin
+        actor_id: null
+        bypass_mode: pull_request
+    rules:
+      # PROC-012
+      - type: pull_request
+        parameters:
+          required_approving_review_count: 0
+      # PROC-013
+      - type: deletion
+      # PROC-014
+      - type: non_fast_forward
