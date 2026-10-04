@@ -18,7 +18,7 @@ Enforced by: [check-branch](https://github.com/WisewareOrg/wise-ci/tree/main/che
 ### PROC-002 — Exemptions
 
 The default branch and branches whose names begin with `renovate/` are exempt from PROC-001 and
-PROC-003–PROC-007.
+PROC-003–PROC-008.
 
 Enforced by: [check-branch](https://github.com/WisewareOrg/wise-ci/tree/main/check-branch)
 
@@ -48,15 +48,21 @@ field. Other linked issues are permitted.
 
 Enforced by: [check-branch](https://github.com/WisewareOrg/wise-ci/tree/main/check-branch)
 
-### PROC-007 — Parent issue
+### PROC-007 — Default-branch parent
 
-A pull request targeting the default branch shall come from an issue with no parent. A pull request
-targeting any other branch shall target a branch named per PROC-001, and its head branch's issue
-shall be a sub-issue, in the same repository, of the target branch's issue.
+A pull request targeting the default branch shall come from a head branch whose issue has no parent
+issue.
 
 Enforced by: [check-branch](https://github.com/WisewareOrg/wise-ci/tree/main/check-branch)
 
-### PROC-008 — Pull-request title
+### PROC-008 — Integration-branch parent
+
+A pull request targeting any other branch shall target a branch named per PROC-001, and its head
+branch's issue shall be a sub-issue, in the same repository, of the target branch's issue.
+
+Enforced by: [check-branch](https://github.com/WisewareOrg/wise-ci/tree/main/check-branch)
+
+### PROC-009 — Pull-request title
 
 A pull-request title shall be a Conventional Commits subject (`type: subject` or `type(scope):
 subject`, per `@commitlint/config-conventional`), and shall not be a `fixup!`, `squash!` or merge
