@@ -9,7 +9,7 @@ its own contribution rules. Each requirement names the gate that enforces it.
 ### PROC-001 — Branch name
 
 The head branch of a pull request shall be named `<type>_<number>-<name>`: `<type>` one of the
-project's ticket types; `<number>` its issue's number, a positive integer with no leading zero;
+repository's ticket types; `<number>` its issue's number, a positive integer with no leading zero;
 `<name>` one or more words, each made up of lowercase letters and digits, joined by single
 underscores.
 
@@ -30,8 +30,8 @@ Enforced by: [check-branch](https://github.com/WisewareOrg/wise-ci/tree/main/che
 
 ### PROC-004 — Type label
 
-The branch's issue shall carry exactly one label from the project's ticket types, the one named by
-the branch's type. Labels outside the ticket types are permitted.
+The branch's issue shall carry exactly one label from the repository's ticket types, the one named
+by the branch's type. Labels outside the ticket types are permitted.
 
 Enforced by: [check-branch](https://github.com/WisewareOrg/wise-ci/tree/main/check-branch)
 
@@ -51,8 +51,8 @@ Enforced by: [check-branch](https://github.com/WisewareOrg/wise-ci/tree/main/che
 ### PROC-007 — Parent issue
 
 A pull request targeting the default branch shall come from an issue with no parent. A pull request
-targeting any other branch shall target a branch named per PROC-001, and its issue shall be a
-sub-issue, in the same repository, of that branch's issue.
+targeting any other branch shall target a branch named per PROC-001, and its head branch's issue
+shall be a sub-issue, in the same repository, of that branch's issue.
 
 Enforced by: [check-branch](https://github.com/WisewareOrg/wise-ci/tree/main/check-branch)
 
