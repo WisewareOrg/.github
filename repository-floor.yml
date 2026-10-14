@@ -1,4 +1,4 @@
-# The repository settings every WisewareOrg repository carries (PROC-011, PROCESS.md).
+# Minimum repository settings for every repository in WisewareOrg (PROC-011, PROCESS.md).
 # GitHub REST ruleset shape (repos/{owner}/{repo}/rulesets). Fields not listed here are not part
 # of the floor.
 rulesets:
@@ -15,10 +15,13 @@ rulesets:
       - type: required_status_checks
         parameters:
           required_status_checks:
+            # check-branch: PROC-001, PROC-002, PROC-003, PROC-004, PROC-005, PROC-006, PROC-007, PROC-008, PROC-010
             - context: check-branch
               integration_id: 15368
+            # pr-title: PROC-009
             - context: pr-title
               integration_id: 15368
+            # repo-floor: PROC-011
             - context: repo-floor
               integration_id: 15368
 

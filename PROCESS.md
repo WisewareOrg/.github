@@ -80,9 +80,8 @@ Enforced by: [check-branch](https://github.com/WisewareOrg/wise-ci/tree/main/che
 
 ### PROC-011 — Repository floor
 
-Each repository shall carry the rulesets stated in [`repository-floor.yml`](repository-floor.yml),
-with every setting stated there matching exactly. Rulesets, rules and settings the floor does not
-state are permitted.
+Each repository's settings shall meet at least those stated in
+[`repository-floor.yml`](repository-floor.yml).
 
 Enforced by: [repo-floor](https://github.com/WisewareOrg/wise-ci/tree/main/repo-floor)
 
