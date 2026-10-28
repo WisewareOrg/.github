@@ -11,19 +11,16 @@ The head branch of a pull request shall be named `<type>_<number>-<name>`: `<typ
 ticket types (PROC-010); `<number>` its issue's number, a positive integer with no leading zero;
 `<name>` one or more words, each made up of lowercase letters and digits, joined by single
 underscores.
-
-Enforced by: [check-branch](https://github.com/WisewareOrg/wise-ci/tree/main/check-branch)
-
-### PROC-002 — Exemptions
-
-The default branch and branches whose names begin with `renovate/` are exempt from PROC-001 and
-PROC-003–PROC-008.
+A pull request whose head branch is the default branch or begins with `renovate/` or
+`dependabot/` is exempt.
 
 Enforced by: [check-branch](https://github.com/WisewareOrg/wise-ci/tree/main/check-branch)
 
 ### PROC-003 — Open issue
 
 A branch's number shall name an open issue — not a pull request — in the same repository.
+A pull request whose head branch is the default branch or begins with `renovate/` or
+`dependabot/` is exempt.
 
 Enforced by: [check-branch](https://github.com/WisewareOrg/wise-ci/tree/main/check-branch)
 
@@ -31,12 +28,16 @@ Enforced by: [check-branch](https://github.com/WisewareOrg/wise-ci/tree/main/che
 
 The branch's issue shall carry exactly one label from the ticket types (PROC-010), the one named by
 the branch's type. Labels outside the ticket types are permitted.
+A pull request whose head branch is the default branch or begins with `renovate/` or
+`dependabot/` is exempt.
 
 Enforced by: [check-branch](https://github.com/WisewareOrg/wise-ci/tree/main/check-branch)
 
 ### PROC-005 — Milestone
 
 The branch's issue shall carry an open milestone.
+A pull request whose head branch is the default branch or begins with `renovate/` or
+`dependabot/` is exempt.
 
 Enforced by: [check-branch](https://github.com/WisewareOrg/wise-ci/tree/main/check-branch)
 
@@ -44,6 +45,8 @@ Enforced by: [check-branch](https://github.com/WisewareOrg/wise-ci/tree/main/che
 
 A pull request shall have its head branch's issue among the issues recorded in its Development
 field. Other linked issues are permitted.
+A pull request whose head branch is the default branch or begins with `renovate/` or
+`dependabot/` is exempt.
 
 Enforced by: [check-branch](https://github.com/WisewareOrg/wise-ci/tree/main/check-branch)
 
@@ -51,6 +54,8 @@ Enforced by: [check-branch](https://github.com/WisewareOrg/wise-ci/tree/main/che
 
 A pull request targeting the default branch shall come from a head branch whose issue has no parent
 issue.
+A pull request whose head branch is the default branch or begins with `renovate/` or
+`dependabot/` is exempt.
 
 Enforced by: [check-branch](https://github.com/WisewareOrg/wise-ci/tree/main/check-branch)
 
@@ -59,6 +64,8 @@ Enforced by: [check-branch](https://github.com/WisewareOrg/wise-ci/tree/main/che
 A pull request targeting a branch other than the default branch shall target a branch named per
 PROC-001, and its head branch's issue shall be a sub-issue, in the same repository, of the target
 branch's issue.
+A pull request whose head branch is the default branch or begins with `renovate/` or
+`dependabot/` is exempt.
 
 Enforced by: [check-branch](https://github.com/WisewareOrg/wise-ci/tree/main/check-branch)
 
@@ -66,7 +73,7 @@ Enforced by: [check-branch](https://github.com/WisewareOrg/wise-ci/tree/main/che
 
 A pull-request title shall be a Conventional Commits subject (`type: subject` or `type(scope):
 subject`, per `@commitlint/config-conventional`), and shall not be a `fixup!`, `squash!` or merge
-subject.
+subject. A pull request whose head branch begins with `dependabot/` is exempt.
 
 Enforced by: [pr-title](https://github.com/WisewareOrg/wise-ci/tree/main/pr-title)
 
