@@ -16,8 +16,8 @@ Enforced by: [check-branch](https://github.com/WisewareOrg/wise-ci/tree/main/che
 
 ### PROC-002 — Exemptions
 
-The default branch and branches whose names begin with `renovate/` are exempt from PROC-001 and
-PROC-003–PROC-008.
+The default branch and branches whose names begin with `renovate/` or `dependabot/` are exempt
+from PROC-001 and PROC-003–PROC-008.
 
 Enforced by: [check-branch](https://github.com/WisewareOrg/wise-ci/tree/main/check-branch)
 
@@ -66,7 +66,7 @@ Enforced by: [check-branch](https://github.com/WisewareOrg/wise-ci/tree/main/che
 
 A pull-request title shall be a Conventional Commits subject (`type: subject` or `type(scope):
 subject`, per `@commitlint/config-conventional`), and shall not be a `fixup!`, `squash!` or merge
-subject.
+subject. A pull request whose head branch begins with `dependabot/` is exempt.
 
 Enforced by: [pr-title](https://github.com/WisewareOrg/wise-ci/tree/main/pr-title)
 
