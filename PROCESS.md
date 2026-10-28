@@ -11,13 +11,8 @@ The head branch of a pull request shall be named `<type>_<number>-<name>`: `<typ
 ticket types (PROC-010); `<number>` its issue's number, a positive integer with no leading zero;
 `<name>` one or more words, each made up of lowercase letters and digits, joined by single
 underscores.
-
-Enforced by: [check-branch](https://github.com/WisewareOrg/wise-ci/tree/main/check-branch)
-
-### PROC-002 — Exemptions
-
 The default branch and branches whose names begin with `renovate/` or `dependabot/` are exempt
-from PROC-001 and PROC-003–PROC-008.
+from this requirement and from PROC-003–PROC-008.
 
 Enforced by: [check-branch](https://github.com/WisewareOrg/wise-ci/tree/main/check-branch)
 
