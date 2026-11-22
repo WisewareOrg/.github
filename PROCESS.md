@@ -109,3 +109,11 @@ Enforced by: [repo-floor](https://github.com/WisewareOrg/wise-ci/tree/main/repo-
 The default branch shall not be force-pushed.
 
 Enforced by: [repo-floor](https://github.com/WisewareOrg/wise-ci/tree/main/repo-floor)
+
+## Python
+
+### PROC-015 — Python floor
+
+A repository shall meet the org Python floor: wise-ci `check-python-floor` passes.
+
+Enforced by: [check-python-floor](https://github.com/WisewareOrg/wise-ci/tree/main/check-python-floor)
