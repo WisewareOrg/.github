@@ -112,9 +112,13 @@ Enforced by: [repo-floor](https://github.com/WisewareOrg/wise-ci/tree/main/repo-
 
 ## Python
 
-### PROC-015 — Python floor
+### PROC-015 — Python standard
 
 A repository's Python configuration shall meet the floor stated in
-[`check-python-floor`'s README](https://github.com/WisewareOrg/wise-ci/blob/main/check-python-floor/README.md).
+[`check-python-floor`'s README](https://github.com/WisewareOrg/wise-ci/blob/main/check-python-floor/README.md),
+and its Python shall pass the checks run by
+[`check-python`](https://github.com/WisewareOrg/wise-ci/blob/main/check-python/README.md). A
+repository tracking no Python passes both.
 
-Enforced by: [check-python-floor](https://github.com/WisewareOrg/wise-ci/tree/main/check-python-floor)
+Enforced by: [check-python-floor](https://github.com/WisewareOrg/wise-ci/tree/main/check-python-floor),
+[check-python](https://github.com/WisewareOrg/wise-ci/tree/main/check-python)
