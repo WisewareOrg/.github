@@ -24,6 +24,12 @@ rulesets:
             # repo-floor: PROC-011
             - context: repo-floor
               integration_id: 15368
+            # check-python-floor: PROC-015
+            - context: check-python-floor
+              integration_id: 15368
+            # check-python: PROC-015
+            - context: check-python
+              integration_id: 15368
 
   - name: pull-request
     target: branch
