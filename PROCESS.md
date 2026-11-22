@@ -114,7 +114,7 @@ Enforced by: [repo-floor](https://github.com/WisewareOrg/wise-ci/tree/main/repo-
 
 ### PROC-015 — Python floor
 
-A repository's Python configuration shall meet at least the floor stated in
+A repository's Python configuration shall meet the floor stated in
 [`check-python-floor`'s README](https://github.com/WisewareOrg/wise-ci/blob/main/check-python-floor/README.md).
 
 Enforced by: [check-python-floor](https://github.com/WisewareOrg/wise-ci/tree/main/check-python-floor)
